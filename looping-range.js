@@ -1,6 +1,6 @@
 function range(start, end, step) {
   let someArray = [];
-  if (start === undefined || end === undefined || step === undefined || start > end || step === 0) {
+  if (start === undefined || end === undefined || step === undefined || start > end || step === 0 || step < 0) {
     return [];
   } else {
     for (let i = start; i <= end; i += step) {
