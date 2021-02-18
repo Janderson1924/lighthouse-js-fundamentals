@@ -1,13 +1,13 @@
 function range(start, end, step) {
-  const someArray = []
+  let someArray = [];
   if (start === undefined || end === undefined || step === undefined || start > end || step === 0) {
     return [];
   } else {
-    for (let i = start; i <= end; i = i + step) {
+    for (let i = start; i <= end; i += step) {
       someArray.push(i);
     }
   }
-  return someArray
+  return someArray;
 }
 
 console.log(range(0, 10, 2));
